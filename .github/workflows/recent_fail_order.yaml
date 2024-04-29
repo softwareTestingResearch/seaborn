@@ -1,4 +1,4 @@
-name: CI
+name: recent_fail_order
 
 on:
   push:

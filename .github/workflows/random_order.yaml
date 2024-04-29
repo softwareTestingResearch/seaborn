@@ -1,4 +1,4 @@
-name: CI
+name: random_order
 
 on:
   push:

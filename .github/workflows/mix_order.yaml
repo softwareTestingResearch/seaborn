@@ -1,4 +1,4 @@
-name: CI
+name: mix_order
 
 on:
   push:

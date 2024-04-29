@@ -1,4 +1,4 @@
-name: CI
+name: change_related_first_order
 
 on:
   push:
