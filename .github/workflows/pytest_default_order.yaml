@@ -84,7 +84,7 @@ jobs:
           pip install .[dev$EXTRAS] $DEPS
 
       - name: Install pytest-ranking
-        run: pip install pytest-ranking==0.2.6
+        run: pip install pytest-ranking
 
       - name: Restore pytest-ranking cache
         id: restore-pytest-ranking-cache
@@ -95,7 +95,7 @@ jobs:
           key: pytest-ranking-cache-${{ github.workflow }}-${{ runner.os }}-${{ matrix.python }}
 
       - name: Run tests
-        run: pytest -v --durations=0 -n auto --cov=seaborn --cov=tests --cov-config=setup.cfg tests --rank --rank-weight=0-1-0
+        run: pytest -v --durations=0 -n auto --cov=seaborn --cov=tests --cov-config=setup.cfg tests
 
       - name: Save pytest-ranking cache
         id: save-pytest-ranking-cache
